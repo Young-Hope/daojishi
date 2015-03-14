@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/edit_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:hint="@string/hint"/>
+    
+    <LinearLayout 
+        android:id="@+id/action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="?android:attr/buttonBarStyle">
+        <Button 
+            android:id="@+id/action_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#3CB371"
+            android:text="我们不散"/>
+        <Button 
+	        android:id="@+id/action_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:textColor="#3CB371"
+	        android:text="时间快跑" />
+        <Button 
+            android:id="@+id/action_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#3CB371"
+            android:text="时光不老"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_time"
+        android:layout_above="@id/action_bar"
+        android:gravity="center"
+        android:background="@drawable/bg">
+        <TextView 
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#191970"
+            android:textSize="60sp"
+            android:text="Hello"/>
+    </RelativeLayout>
+    
+</RelativeLayout>
+

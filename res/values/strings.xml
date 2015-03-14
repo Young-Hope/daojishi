@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">倒计时</string>
+    <string name="default_text">Hello</string>
+	<string name="hint">请输入秒数</string>
+	<string name="remind">妞妞，别调皮了,快输入秒数哈</string>
+</resources>
